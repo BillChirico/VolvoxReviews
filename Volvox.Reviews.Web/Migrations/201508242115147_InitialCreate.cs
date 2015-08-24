@@ -16,8 +16,13 @@ namespace Volvox.Reviews.Web.Migrations
                         CreatedBy = c.String(maxLength: 256),
                         UpdatedDate = c.DateTime(nullable: false),
                         UpdatedBy = c.String(maxLength: 256),
+                        MovieId = c.Int(),
                         Title = c.String(),
                         Description = c.String(),
+                        TelevisionShowId = c.Int(),
+                        Title1 = c.String(),
+                        Description1 = c.String(),
+                        Network = c.String(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id);

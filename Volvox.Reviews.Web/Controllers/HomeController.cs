@@ -33,9 +33,11 @@ namespace Volvox.Reviews.Web.Controllers
 
         public ActionResult About()
         {
+            var product = _context.Reviews.FirstOrDefault(r => r.Id == 1)?.Product;
+
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(product);
         }
 
         public ActionResult Contact()

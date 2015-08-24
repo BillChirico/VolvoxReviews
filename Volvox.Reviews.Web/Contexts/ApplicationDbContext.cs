@@ -11,6 +11,7 @@ using Volvox.Reviews.Domain.Models.Common;
 using Volvox.Reviews.Domain.Models.Identity;
 using Volvox.Reviews.Domain.Models.Products;
 using Volvox.Reviews.Domain.Models.Products.Movies;
+using Volvox.Reviews.Domain.Models.Products.Television;
 using Volvox.Reviews.Domain.Models.Reviews;
 using Volvox.Reviews.Web.Models;
 
@@ -28,6 +29,9 @@ namespace Volvox.Reviews.Web.Contexts
 
         // Movies
         public DbSet<Movie> Movies { get; set; }
+
+        // Television
+        public DbSet<TelevisionShow> TelevisionShows { get; set; }
 
         // Products
         public DbSet<Product> Products { get; set; } 

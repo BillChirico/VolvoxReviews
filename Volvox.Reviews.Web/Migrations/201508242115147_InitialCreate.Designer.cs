@@ -13,7 +13,7 @@ namespace Volvox.Reviews.Web.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201508242037511_InitialCreate"; }
+            get { return "201508242115147_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

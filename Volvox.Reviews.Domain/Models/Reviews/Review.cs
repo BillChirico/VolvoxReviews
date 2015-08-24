@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Volvox.Reviews.Domain.Models.Common;
 using Volvox.Reviews.Domain.Models.Identity;
+using Volvox.Reviews.Domain.Models.Products;
 using Volvox.Reviews.Domain.Models.Products.Movies;
 
 namespace Volvox.Reviews.Domain.Models.Reviews
@@ -17,8 +18,8 @@ namespace Volvox.Reviews.Domain.Models.Reviews
 
         public virtual ApplicationUser User { get; set; }
 
-        public virtual int MovieId { get; set; }
+        public virtual int ProductId { get; set; }
 
-        public virtual Movie Movie { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

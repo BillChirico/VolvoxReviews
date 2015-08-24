@@ -8,16 +8,17 @@ namespace Volvox.Reviews.Web.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Movies",
+                "dbo.Products",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Title = c.String(),
-                        Description = c.String(),
                         CreatedDate = c.DateTime(nullable: false),
                         CreatedBy = c.String(maxLength: 256),
                         UpdatedDate = c.DateTime(nullable: false),
                         UpdatedBy = c.String(maxLength: 256),
+                        Title = c.String(),
+                        Description = c.String(),
+                        Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -29,7 +30,7 @@ namespace Volvox.Reviews.Web.Migrations
                         Title = c.String(),
                         Body = c.String(),
                         Rating = c.Double(nullable: false),
-                        MovieId = c.Int(nullable: false),
+                        ProductId = c.Int(nullable: false),
                         CreatedDate = c.DateTime(nullable: false),
                         CreatedBy = c.String(maxLength: 256),
                         UpdatedDate = c.DateTime(nullable: false),
@@ -37,9 +38,9 @@ namespace Volvox.Reviews.Web.Migrations
                         User_Id = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Movies", t => t.MovieId, cascadeDelete: true)
+                .ForeignKey("dbo.Products", t => t.ProductId, cascadeDelete: true)
                 .ForeignKey("dbo.AspNetUsers", t => t.User_Id)
-                .Index(t => t.MovieId)
+                .Index(t => t.ProductId)
                 .Index(t => t.User_Id);
             
             CreateTable(
@@ -121,7 +122,7 @@ namespace Volvox.Reviews.Web.Migrations
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
-            DropForeignKey("dbo.Reviews", "MovieId", "dbo.Movies");
+            DropForeignKey("dbo.Reviews", "ProductId", "dbo.Products");
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
@@ -129,14 +130,14 @@ namespace Volvox.Reviews.Web.Migrations
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.Reviews", new[] { "User_Id" });
-            DropIndex("dbo.Reviews", new[] { "MovieId" });
+            DropIndex("dbo.Reviews", new[] { "ProductId" });
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.Reviews");
-            DropTable("dbo.Movies");
+            DropTable("dbo.Products");
         }
     }
 }

@@ -50,7 +50,9 @@ namespace Volvox.Reviews.Web.Migrations
 
                 context.Movies.AddOrUpdate(m);
 
-                var r = new Review() { Title = "Test Review One", Body = "Test Review Body One", Rating = 1, User = user, MovieId = m.Id, Movie = m, CreatedBy = user.Id };
+                context.SaveChanges();
+
+                var r = new Review() { Title = "Test Review One", Body = "Test Review Body One", Rating = 1, User = user, ProductId = m.Id, Product = m, CreatedBy = user.Id };
                 m.Reviews = context.Reviews.ToList();
 
                 // Add test reviews

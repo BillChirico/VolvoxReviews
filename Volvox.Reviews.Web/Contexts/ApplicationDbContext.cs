@@ -29,6 +29,9 @@ namespace Volvox.Reviews.Web.Contexts
         // Movies
         public DbSet<Movie> Movies { get; set; }
 
+        // Products
+        public DbSet<Product> Products { get; set; } 
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

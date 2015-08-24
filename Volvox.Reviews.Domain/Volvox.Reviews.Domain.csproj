@@ -54,6 +54,7 @@
     <Compile Include="Models\Common\IEntity.cs" />
     <Compile Include="Models\Identity\ApplicationUser.cs" />
     <Compile Include="Models\Products\Movies\Movie.cs" />
+    <Compile Include="Models\Products\Product.cs" />
     <Compile Include="Models\Reviews\Review.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

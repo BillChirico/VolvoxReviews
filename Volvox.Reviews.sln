@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvox.Reviews.Web", "Volvox.Reviews.Web\Volvox.Reviews.Web.csproj", "{67BB0C9C-87C7-45B2-9FEB-D6C88642708E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvox.Reviews.Web.Tests", "Volvox.Reviews.Web.Tests\Volvox.Reviews.Web.Tests.csproj", "{4F2CA9C6-EE38-45FE-9FDE-3B2787E79048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvox.Reviews.Domain", "Volvox.Reviews.Domain\Volvox.Reviews.Domain.csproj", "{C6AB5ED1-83D1-433F-9210-13D1FD8E9685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvox.Reviews.Repository", "Volvox.Reviews.Repository\Volvox.Reviews.Repository.csproj", "{7C8732FA-3D5B-4DA4-B949-EA51480E7622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volvox.Reviews.Service", "Volvox.Reviews.Service\Volvox.Reviews.Service.csproj", "{18D78F66-0B49-41E1-8D02-89A97044C03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67BB0C9C-87C7-45B2-9FEB-D6C88642708E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BB0C9C-87C7-45B2-9FEB-D6C88642708E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BB0C9C-87C7-45B2-9FEB-D6C88642708E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BB0C9C-87C7-45B2-9FEB-D6C88642708E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2CA9C6-EE38-45FE-9FDE-3B2787E79048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2CA9C6-EE38-45FE-9FDE-3B2787E79048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2CA9C6-EE38-45FE-9FDE-3B2787E79048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2CA9C6-EE38-45FE-9FDE-3B2787E79048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6AB5ED1-83D1-433F-9210-13D1FD8E9685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AB5ED1-83D1-433F-9210-13D1FD8E9685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AB5ED1-83D1-433F-9210-13D1FD8E9685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AB5ED1-83D1-433F-9210-13D1FD8E9685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8732FA-3D5B-4DA4-B949-EA51480E7622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8732FA-3D5B-4DA4-B949-EA51480E7622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8732FA-3D5B-4DA4-B949-EA51480E7622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8732FA-3D5B-4DA4-B949-EA51480E7622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D78F66-0B49-41E1-8D02-89A97044C03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D78F66-0B49-41E1-8D02-89A97044C03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D78F66-0B49-41E1-8D02-89A97044C03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D78F66-0B49-41E1-8D02-89A97044C03A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

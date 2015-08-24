@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Volvox.Reviews.Domain.Models.Reviews.Review>
+
+@{
+    ViewBag.Title = "Volvox Reviews";
+    
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="text-center">Volvox Reviews</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 class="text-center">Most Recent Reviews</h2>
+        <div class="list-group">
+            @foreach (var item in Model)
+            {
+                <a href="@Url.Action("Details", "Reviews", new {id = item.Id})" class="list-group-item">@Html.DisplayFor(modelItem => item.Title)</a>
+            }
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a>
+        </p>
+    </div>
+</div>

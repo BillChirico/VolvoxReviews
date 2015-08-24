@@ -6,9 +6,7 @@ using Volvox.Reviews.Domain.Models.Reviews;
 namespace Volvox.Reviews.Domain.Models.Products.Movies
 {
     public class Movie : Product
-    {
-        public int MovieId { get; set; }
-
+    { 
         public string Title { get; set; }
 
         [DataType(DataType.MultilineText)]

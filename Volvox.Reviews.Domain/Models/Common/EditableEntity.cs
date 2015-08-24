@@ -10,14 +10,14 @@ namespace Volvox.Reviews.Domain.Models.Common
     public abstract class EditableEntity<T> : Entity<T>, IEditableEntity
     {
         [ScaffoldColumn(false)]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
         [MaxLength(256)]
         [ScaffoldColumn(false)]
         public string CreatedBy { get; set; }
 
         [ScaffoldColumn(false)]
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
 
         [MaxLength(256)]
         [ScaffoldColumn(false)]

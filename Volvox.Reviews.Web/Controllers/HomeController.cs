@@ -29,14 +29,25 @@ namespace Volvox.Reviews.Web.Controllers
 
         public ActionResult Index()
         {
-            var recentReviews = _reviewService.GetRecentReviews(3);
+            var recent = _reviewService.GetRecentReviews(5);
 
-            return View(recentReviews);
+            return View(recent);
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+
+            /*var firstOrDefault = _context.Movies.FirstOrDefault(m => m.Id == 1);
+            if (firstOrDefault != null)
+                _reviewService.Create(new Review()
+                {
+                    Title = "Test Review",
+                    Body = "This is a test review.",
+                    Rating = 8.7,
+                    Product = firstOrDefault,
+                    ProductId = firstOrDefault.Id
+                });*/
 
             return View();
         }

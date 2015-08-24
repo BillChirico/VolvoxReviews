@@ -8,8 +8,6 @@ namespace Volvox.Reviews.Domain.Models.Products.Television
 {
     public class TelevisionShow : Product
     {
-        public int TelevisionShowId { get; set; }
-
         public string Title { get; set; }
 
         public string Description { get; set; }

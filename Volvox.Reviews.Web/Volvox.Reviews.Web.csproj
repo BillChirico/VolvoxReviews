@@ -165,7 +165,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\Products\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -173,6 +173,14 @@
     <Compile Include="Migrations\201508242115147_InitialCreate.cs" />
     <Compile Include="Migrations\201508242115147_InitialCreate.Designer.cs">
       <DependentUpon>201508242115147_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508242158066_NullableDateTime.cs" />
+    <Compile Include="Migrations\201508242158066_NullableDateTime.Designer.cs">
+      <DependentUpon>201508242158066_NullableDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508242208536_RemovedIds.cs" />
+    <Compile Include="Migrations\201508242208536_RemovedIds.Designer.cs">
+      <DependentUpon>201508242208536_RemovedIds.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -270,6 +278,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201508242115147_InitialCreate.resx">
       <DependentUpon>201508242115147_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508242158066_NullableDateTime.resx">
+      <DependentUpon>201508242158066_NullableDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508242208536_RemovedIds.resx">
+      <DependentUpon>201508242208536_RemovedIds.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

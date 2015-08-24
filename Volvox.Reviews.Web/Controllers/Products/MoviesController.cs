@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
+﻿using System.Net;
 using System.Web.Mvc;
 using Volvox.Reviews.Domain.Models.Products.Movies;
 using Volvox.Reviews.Repository.Products.Movies;
-using Volvox.Reviews.Repository.Reviews;
 using Volvox.Reviews.Service.Products.Movies;
 using Volvox.Reviews.Web.Contexts;
 
-namespace Volvox.Reviews.Web.Controllers
+namespace Volvox.Reviews.Web.Controllers.Products
 {
     public class MoviesController : Controller
     {

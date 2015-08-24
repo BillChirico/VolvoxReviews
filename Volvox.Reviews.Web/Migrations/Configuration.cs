@@ -39,7 +39,7 @@ namespace Volvox.Reviews.Web.Migrations
             {
                 var userStore = new UserStore<ApplicationUser>(context);
                 var userManager = new UserManager<ApplicationUser>(userStore);
-                var user = new ApplicationUser { UserName = "Bapes", Email = "billchirico@gmail.com" };
+                var user = new ApplicationUser { UserName = "bapes@ymail.com", Email = "bapes@ymail.com" };
 
                 // Create the user and add to the Admin role
                 userManager.Create(user, "Abc123");

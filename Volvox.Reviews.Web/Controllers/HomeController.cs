@@ -5,6 +5,9 @@ using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using Volvox.Reviews.Domain.Models.Products.Movies;
+using Volvox.Reviews.Domain.Models.Products.Television;
+using Volvox.Reviews.Domain.Models.Reviews;
 using Volvox.Reviews.Repository.Reviews;
 using Volvox.Reviews.Service.Reviews;
 using Volvox.Reviews.Web.Contexts;
@@ -33,11 +36,9 @@ namespace Volvox.Reviews.Web.Controllers
 
         public ActionResult About()
         {
-            var product = _context.Reviews.FirstOrDefault(r => r.Id == 1)?.Product;
-
             ViewBag.Message = "Your application description page.";
 
-            return View(product);
+            return View();
         }
 
         public ActionResult Contact()

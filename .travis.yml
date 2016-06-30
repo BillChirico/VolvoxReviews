@@ -1,5 +1,7 @@
 language: CSharp
 solution: Volvox.Reviews.sln
+install:
+  - dnvm install latest
 script:
   - dotnet restore
   - dotnet run

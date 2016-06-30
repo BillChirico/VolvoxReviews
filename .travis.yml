@@ -10,3 +10,4 @@ script:
   - dotnet restore
   - dotnet run
   - dotnet test
+

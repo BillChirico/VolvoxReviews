@@ -1,9 +1,10 @@
-language: CSharp
-solution: Volvox.Reviews.sln
+language: csharp
+os: osx
+mono:
+  - latest
 install:
-  - curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
-  - dnvm install latest
 script:
-  - dotnet restore
-  - dotnet run
-  - dotnet test
+  - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0-preview1/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version 1.0.0-preview1-002702 --install-dir ~/dotnet
+  - ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
+  - dotnet restore .\src\NLog\ 
+  - dotnet pack .\src\NLog\  --configuration release 
